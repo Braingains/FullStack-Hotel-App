@@ -2,7 +2,7 @@
 <div class="booking">
     <h2>{{ booking.name }} </h2>
     <p> {{ booking.email}} </p>
-    <p> {{ booking.checkin }} </p>
+    <p v-on:click="changeStatus"> Checked in:  {{ booking.checkin }} </p>
     <button v-on:click='deleteBooking'>Delete Booking</button>
 </div>
 </template>
@@ -14,6 +14,10 @@ export default {
     name: 'booking',
     props: ['booking'],
     methods: {
+        changeStatus(){
+          
+        },
+
         deleteBooking(){
             BookingService.deleteBooking(this.booking._id)
             .then(() => eventBus.$emit('booking-deleted', this.booking._id))
