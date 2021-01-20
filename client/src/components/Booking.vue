@@ -1,6 +1,6 @@
 <template>
 <div class="booking">
-    <h2>{{ booking.name }} </h2>
+    <h2>⚔ {{ booking.name }} ⚔ </h2>
     <p> {{ booking.email}} </p>
     <div class="checkinUpdate">
     <form id='checkinUpdate' v-on:submit="changeStatus">
