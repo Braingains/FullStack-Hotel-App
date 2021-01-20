@@ -1,6 +1,6 @@
 <template>
   <form id="bookings-form" v-on:submit="saveBooking" method="post">
-      <h2> Add Booking </h2>
+      <h1> Add Booking </h1>
     <div class="inputForm">
       <label for="name">Name:</label>
       <input type="text" id="name" v-model="name" required/>
@@ -50,7 +50,9 @@ export default {
     }
 }
 </script>
-
-<style>
+<style lang="css" scoped>
+input{
+  background-color: burlywood;
+}
 
 </style>

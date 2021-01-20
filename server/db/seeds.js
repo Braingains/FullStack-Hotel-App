@@ -15,6 +15,6 @@ db.bookings.insertMany([
     {
         name: "Harold Fairhair",
         email: "kingofallnorway@aol.com",
-        checking: false
+        checkin: false
     }
 ])
