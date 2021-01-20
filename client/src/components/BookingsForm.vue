@@ -1,18 +1,18 @@
 <template>
   <form id="bookings-form" v-on:submit="saveBooking" method="post">
-      <h1> Add Booking </h1>
+      <h1>🏴‍☠️🏴‍☠️🏴‍☠️ Add a Shipmate 🏴‍☠️🏴‍☠️🏴‍☠️</h1>
     <div class="inputForm">
-      <label for="name">Name:</label>
+      <label for="name">What be the name?:</label>
       <input type="text" id="name" v-model="name" required/>
     </div>
     <div class="inputForm">
-      <label for="email">Email:</label>
+      <label for="email">Pigeon ID:</label>
       <input type="email" id="email" v-model="email" required/>
     </div>
     <div class="inputForm">
-      <label for="checkinTrue">Checked in</label>
+      <label for="checkinTrue">On board</label>
       <input type="radio" id="checkinTrue" v-model="checkin" :value="true">
-      <label for="checkinFalse">Not Checked in</label>
+      <label for="checkinFalse">Overboard</label>
       <input type="radio" id="checkinFalse" v-model="checkin" :value="false">
     </div>
     <input type="submit" value="Save" id="save">
@@ -53,6 +53,14 @@ export default {
 <style lang="css" scoped>
 input{
   background-color: burlywood;
+}
+#save{
+        border-radius: 20px;
+        background-color: burlywood;
+}
+.inputForm{
+        
+
 }
 
 </style>

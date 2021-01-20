@@ -4,14 +4,14 @@
     <p> {{ booking.email}} </p>
     <div class="checkinUpdate">
     <form id='checkinUpdate' v-on:submit="changeStatus">
-      <label for="checkinTrue">Checked in</label>
+      <label for="checkinTrue">On board</label>
       <input type="radio" id="checkinTrue" v-model="booking.checkin" :value="true">
-      <label for="checkinFalse">Not Checked in</label>
+      <label for="checkinFalse">Overboard</label>
       <input type="radio" id="checkinFalse" v-model="booking.checkin" :value="false">
-      <button type="submit" value="Save">Confirm Check-in details</button>
+      <button type="submit" value="Save">Confirm</button>
     </form>
     </div>
-    <button v-on:click='deleteBooking'>Delete Booking</button>
+    <button v-on:click='deleteBooking'>Walk the plank</button>
 </div>
 </template>
 
